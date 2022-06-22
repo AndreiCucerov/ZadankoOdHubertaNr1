@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Cars</title>
+</head>
+<body th:object="${cars}">
+    <h1>Lista Samochodow</h1>
+    <p th:if ="${cars==null}">
+        Nie ma jeszcze samochodow
+    </p>
+    <li th:each="car: ${cars}" th:text="'1'+${marka}">
+
+    </li>
+</body>
+</html>

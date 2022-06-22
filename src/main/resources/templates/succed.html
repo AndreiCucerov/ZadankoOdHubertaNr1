@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Succes</title>
+</head>
+<body th:object="${car}">
+    <h1>Dodales objekt</h1>
+    <p th:text="*{'Kolor = ' +color + ' Marka = ' + marka+ ' Wlasciciel = '+ wlasciciel}"></p>
+    <a th:href="@{/}">Strona glowna</a><br/>
+    <a th:href="@{/save}">Dodaj jeszcze</a>
+</body>
+</html>

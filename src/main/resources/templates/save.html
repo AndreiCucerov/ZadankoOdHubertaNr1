@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Save</title>
+</head>
+<body>
+<form action="#" method="post" th:action="@{/saving}" th:object="${car}">
+        <label>
+            marka
+            <input type="text" placeholder="BMW" th:field="*{marka}">
+        </label>
+
+
+        <label>
+            wlasciciel
+            <input type="text" placeholder="ja" th:field="*{wlasciciel}">
+        </label>
+
+        <label>
+            color
+            <input type="text" placeholder="czarny" th:field="*{color}">
+        </label>
+        <button type="submit">Add</button>
+    </form>
+</body>
+</html>
